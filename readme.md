@@ -28,7 +28,7 @@ static propTypes={
 ### 使用说明
 
 ```
-import CHLoading,{Loading} from 'react-native-ch-alert'
+import  CHAlertModal ,{Alert} from 'react-native-ch-alert'
 
 export  default class App extends React.Component{
 
@@ -36,7 +36,7 @@ export  default class App extends React.Component{
 
 
      
-        CHAlert
+        Alert
             .show()
             .setTitleName("弹出框")
             .setTitleColor('#f0f')
@@ -57,14 +57,14 @@ export  default class App extends React.Component{
             .setHideLeftBtn(true)
 
 
-        CHAlert.sureCallBack(function () {
+        Alert.sureCallBack(function () {
             console.log("----点击了-----")
-            CHAlert.hide()
+            Alert.hide()
         })
 
-        CHAlert.cancelCallBack(function () {
+        Alert.cancelCallBack(function () {
 
-            CHAlert.hide()
+            Alert.hide()
             console.log("-------点击了取消----")
         })
   }
